@@ -34,6 +34,8 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/slick/slick.css" rel="stylesheet">
     <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -770,18 +772,30 @@
 
                     <div class="col-lg-4 col-md-6 p-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item">
+
                             <div class="service-img">
-                                <img src="img/forro-lã-vidro.jpg" alt="Instalação de Forro Lã de Vidro" loading="lazy">
+                                <div class="slides-container-css" id="slides-1">
+
+                                    <img src="img/forro-lã-vidro.jpg" alt="Instalação de Forro Lã de Vidro"
+                                        loading="lazy" class="item">
+                                    <img src="img/forrovid-preto.webp" alt="Exemplo 2 Lã de Vidro" loading="lazy"
+                                        class="item">
+                                    
+                                </div>
+
                                 <div class="service-overlay">
                                     <p>Instalação profissional de forros em lã de vidro, garantindo isolamento
                                         termoacústico e conforto para ambientes residenciais e corporativos.</p>
                                 </div>
                             </div>
+
                             <div class="service-text">
                                 <h3>Forros em Lã de Vidro e Acústicos</h3>
                             </div>
                         </div>
                     </div>
+
+
 
                     <div class="col-lg-4 col-md-6 p-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
@@ -874,6 +888,83 @@
     </div>
 
     <style>
+
+        /* Container pai para posicionamento (já deve existir no seu CSS) */
+.service-item .service-img {
+    position: relative;
+    overflow: hidden; /* Corta o excesso de slides */
+    height: 250px; /* Defina uma altura fixa para a foto, senão o carrossel fica com altura zero */
+}
+
+/* 1. Container que será animado */
+.slides-container-css {
+    width: 300%; /* (3 slides x 100% cada) */
+    height: 100%;
+    display: flex; /* Coloca as imagens lado a lado */
+    animation: slide-item-1 9s infinite; /* Tempo total: 9s (3 imagens * 3s cada) */
+}
+
+/* 2. Estilo da imagem dentro do slide */
+.slides-container-css img {
+    width: calc(100% / 2); /* Cada imagem ocupa 1/3 da largura do container */
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. A ANIMAÇÃO QUE FAZ O MOVIMENTO AUTOMÁTICO */
+/* Container pai para posicionamento (já deve existir no seu CSS) */
+.service-item .service-img {
+    position: relative;
+    overflow: hidden; 
+    height: 250px; /* IMPORTANTE: Mantenha uma altura fixa aqui */
+}
+
+/* 1. Container que será animado */
+.slides-container-css {
+    width: 200%; /* Corrigido: 2 slides x 100% cada = 200% */
+    height: 100%;
+    display: flex; 
+    animation: slide-item-1 6s infinite; /* Tempo total: 6s (2 imagens * 3s cada) */
+}
+
+/* 2. Estilo da imagem dentro do slide */
+.slides-container-css img {
+    width: 50%; /* Corrigido: Cada imagem ocupa 50% da largura do container */
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. A ANIMAÇÃO CORRIGIDA PARA APENAS 2 SLIDES */
+@keyframes slide-item-1 {
+    /* Estado 1: Imagem 1 visível (0% a 50%) */
+    0%, 45% {
+        transform: translateX(0); /* Posição inicial */
+    }
+    
+    /* Estado 2: Imagem 2 visível (50% a 95%) */
+    50%, 95% {
+        transform: translateX(-50%); /* Desloca 50% para a esquerda (mostra a Imagem 2) */
+    }
+
+    /* Volta ao início */
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+/* Opcional: Pausar no hover */
+.service-img:hover .slides-container-css {
+    animation-play-state: paused;
+}
+
+/* Opcional: Pausar no hover */
+.service-img:hover .slides-container-css {
+    animation-play-state: paused;
+}
+
+
+
+
         /* --- ESTILOS CTA DE ESPECIALIZAÇÃO --- */
 
         /* Configuração Geral da Seção CTA */
@@ -997,355 +1088,355 @@
 
     <!-- Footer Dimaser Start -->
 
-            <style>
-                .footer-dimaser {
-                    background-color: #275A53;
-                    color: #cccccc;
-                    font-family: 'Poppins', sans-serif;
-                    padding: 40px 0 20px 0;
-                    font-size: 14px;
-                    border-top: 3px solid #f9c80e;
-                }
+    <style>
+        .footer-dimaser {
+            background-color: #275A53;
+            color: #cccccc;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px 0 20px 0;
+            font-size: 14px;
+            border-top: 3px solid #f9c80e;
+        }
 
-                /* Títulos das Colunas */
-                .footer-dimaser h4 {
-                    color: #f9c80e;
-                    margin-bottom: 20px;
-                    font-weight: 800;
-                    font-size: 1.15rem;
-                    position: relative;
-                    text-transform: uppercase;
-                }
+        /* Títulos das Colunas */
+        .footer-dimaser h4 {
+            color: #f9c80e;
+            margin-bottom: 20px;
+            font-weight: 800;
+            font-size: 1.15rem;
+            position: relative;
+            text-transform: uppercase;
+        }
 
-                .footer-dimaser h4::after {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 3px;
-                    background-color: #f9c80e;
-                    position: absolute;
-                    bottom: -10px;
-                    left: 0;
-                }
+        .footer-dimaser h4::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #f9c80e;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
 
-                /* Estilo dos Links de Navegação */
-                .footer-dimaser a:not(.btn),
-                .footer-dimaser p a {
-                    color: #cccccc;
-                    text-decoration: none;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    display: block;
-                    margin-bottom: 4px;
-                    line-height: 1.6;
-                }
+        /* Estilo dos Links de Navegação */
+        .footer-dimaser a:not(.btn),
+        .footer-dimaser p a {
+            color: #cccccc;
+            text-decoration: none;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+            display: block;
+            margin-bottom: 4px;
+            line-height: 1.6;
+        }
 
-                .footer-dimaser a:hover:not(.btn),
-                .footer-dimaser p a:hover {
-                    color: #fff;
-                }
+        .footer-dimaser a:hover:not(.btn),
+        .footer-dimaser p a:hover {
+            color: #fff;
+        }
 
-                /* Ícones de contato */
-                .footer-dimaser .fa {
-                    color: #f9c80e;
-                    margin-right: 12px;
-                    width: 15px;
-                }
+        /* Ícones de contato */
+        .footer-dimaser .fa {
+            color: #f9c80e;
+            margin-right: 12px;
+            width: 15px;
+        }
 
-                /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
-                .footer-dimaser .col-lg-3 p {
-                    display: flex;
-                    align-items: flex-start;
-                }
+        /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
+        .footer-dimaser .col-lg-3 p {
+            display: flex;
+            align-items: flex-start;
+        }
 
-                .footer-dimaser .col-lg-3 p .fa {
-                    flex-shrink: 0;
-                }
+        .footer-dimaser .col-lg-3 p .fa {
+            flex-shrink: 0;
+        }
 
-                .footer-dimaser .col-lg-3 p a {
-                    display: inline;
-                    line-height: inherit;
-                    margin-bottom: 0;
-                }
+        .footer-dimaser .col-lg-3 p a {
+            display: inline;
+            line-height: inherit;
+            margin-bottom: 0;
+        }
 
-                .footer-dimaser .col-lg-3 p:not(:first-of-type) {
-                    display: block;
-                }
-
-
-                /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
-                .footer-social {
-                    display: flex;
-                    gap: 15px;
-                    margin-top: 20px;
-                }
-
-                .footer-social a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 20px;
-                    height: 20px;
-                    color: #275A53;
-                    font-size: 1.6rem;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    text-decoration: none;
-                }
-
-                .footer-social a:hover {
-                    color: #fdbe33;
-
-                }
+        .footer-dimaser .col-lg-3 p:not(:first-of-type) {
+            display: block;
+        }
 
 
-                /* Rodapé Inferior (Direitos Autorais - Baseboard) */
-                .footer-bottom-line {
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    padding-top: 15px;
-                    margin-top: 15px;
-                    font-size: 13px;
-                }
+        /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-                .footer-bottom-line p {
-                    margin-bottom: 10px;
-                }
+        .footer-social a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            color: #275A53;
+            font-size: 1.6rem;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+        }
 
-                .footer-bottom-line a {
-                    color: #f9c80e !important;
-                    display: inline;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                }
+        .footer-social a:hover {
+            color: #fdbe33;
 
-                /* Estilo da Newsletter */
-                .footer-newsletter .form-control {
-                    border-radius: 3px 0 0 3px;
-                    border: none;
-                    padding: 8px 10px;
-                    height: auto;
-                    background-color: rgba(255, 255, 255, 0.95);
-                    color: #275A53;
-                }
-
-                .footer-newsletter .btn {
-                    background: #f9c80e;
-                    color: #275A53;
-                    border-radius: 0 3px 3px 0;
-                    padding: 8px 15px;
-                    font-weight: 700;
-                    border: none;
-                    transition: background 0.3s;
-                }
-
-                .footer-newsletter .btn:hover {
-                    background: #fff;
-                    color: #f9c80e;
-                }
-
-                /* Responsividade: Centraliza o conteúdo em Mobile */
-                @media (max-width: 991px) {
-                    .footer-dimaser {
-                        padding-top: 30px;
-                    }
-
-                    .footer-dimaser h4::after {
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-
-                    .footer-dimaser .col-md-6.col-lg-3,
-                    .footer-dimaser .footer-newsletter {
-                        text-align: center;
-                        margin-bottom: 30px !important;
-                    }
-
-                    .footer-dimaser .col-lg-3 p,
-                    .footer-dimaser .col-lg-3 a {
-                        text-align: center;
-                        display: block;
-                    }
-
-                    .footer-dimaser .col-lg-3 p:first-of-type {
-                        display: block;
-                        text-align: center;
-                    }
-
-                    .footer-social {
-                        justify-content: center;
-                        margin: 15px auto 20px auto;
-                    }
-
-                    .footer-bottom-line .d-flex {
-                        flex-direction: column;
-                        text-align: center;
-                    }
-
-                    .footer-dimaser .footer-newsletter .form {
-                        max-width: 350px;
-                        margin: 15px auto 0 auto;
-                    }
-                }
-            </style>
-
-            <footer class="footer-dimaser">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Fale Conosco</h4>
-                            <p>
-                                <i class="fa fa-map-marker-alt"></i>
-                                <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
-                                    Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
-                                </a>
-                            </p>
-                            <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
-                            </p>
-                            <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
-                            </p>
-                            <p><i class="fa fa-envelope"></i> <a
-                                    href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a></p>
-
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Soluções e Sistemas</h4>
-                            <a href="divisorias.html">Divisórias Corporativas</a>
-                            <a href="drywall.html">Drywall e Estruturas</a>
-                            <a href="service.html">Instalação e Suporte Técnico</a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Institucional e Apoio</h4>
-                            <a href="about.html">Quem Somos (Sobre Nós)</a>
+        }
 
 
-                            <a href="blog.html">Blog e Notícias Técnicas</a>
-                            <a href="contact.html">Localização e Representantes</a>
-                        </div>
+        /* Rodapé Inferior (Direitos Autorais - Baseboard) */
+        .footer-bottom-line {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 13px;
+        }
 
+        .footer-bottom-line p {
+            margin-bottom: 10px;
+        }
 
+        .footer-bottom-line a {
+            color: #f9c80e !important;
+            display: inline;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+        }
 
+        /* Estilo da Newsletter */
+        .footer-newsletter .form-control {
+            border-radius: 3px 0 0 3px;
+            border: none;
+            padding: 8px 10px;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #275A53;
+        }
+
+        .footer-newsletter .btn {
+            background: #f9c80e;
+            color: #275A53;
+            border-radius: 0 3px 3px 0;
+            padding: 8px 15px;
+            font-weight: 700;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .footer-newsletter .btn:hover {
+            background: #fff;
+            color: #f9c80e;
+        }
+
+        /* Responsividade: Centraliza o conteúdo em Mobile */
+        @media (max-width: 991px) {
+            .footer-dimaser {
+                padding-top: 30px;
+            }
+
+            .footer-dimaser h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-dimaser .col-md-6.col-lg-3,
+            .footer-dimaser .footer-newsletter {
+                text-align: center;
+                margin-bottom: 30px !important;
+            }
+
+            .footer-dimaser .col-lg-3 p,
+            .footer-dimaser .col-lg-3 a {
+                text-align: center;
+                display: block;
+            }
+
+            .footer-dimaser .col-lg-3 p:first-of-type {
+                display: block;
+                text-align: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+                margin: 15px auto 20px auto;
+            }
+
+            .footer-bottom-line .d-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-dimaser .footer-newsletter .form {
+                max-width: 350px;
+                margin: 15px auto 0 auto;
+            }
+        }
+    </style>
+
+    <footer class="footer-dimaser">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Fale Conosco</h4>
+                    <p>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
+                            Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
+                        </a>
+                    </p>
+                    <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
+                    </p>
+                    <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
+                    </p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
                     </div>
-
-                    <div class="footer-bottom-line">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
-                                reservados.
-                            </p>
-                            <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
-                        </div>
-                    </div>
-
                 </div>
-            </footer>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    // Seletores
-                    const toggle = document.getElementById('menu-toggle');
-                    const navLinks = document.getElementById('nav-links');
-                    const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                    // Função auxiliar para fechar todos os dropdowns abertos
-                    const closeAllDropdowns = () => {
-                        document.querySelectorAll('.dropdown.open').forEach(dd => {
-                            dd.classList.remove('open');
-                            const controlledLink = dd.querySelector('.dropdown-link');
-                            if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                        });
-                    };
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Soluções e Sistemas</h4>
+                    <a href="divisorias.html">Divisórias Corporativas</a>
+                    <a href="drywall.html">Drywall e Estruturas</a>
+                    <a href="service.html">Instalação e Suporte Técnico</a>
+                </div>
 
-                    /* 1. Lógica do Menu Principal (Hamburger) */
-                    if (toggle && navLinks) {
-                        toggle.addEventListener('click', () => {
-                            const navbar = document.querySelector('.navbar');
-                            const headerHeight = navbar ? navbar.offsetHeight : 0;
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Institucional e Apoio</h4>
+                    <a href="about.html">Quem Somos (Sobre Nós)</a>
 
-                            const isMenuOpen = navLinks.classList.toggle('open');
-                            toggle.setAttribute('aria-expanded', isMenuOpen);
 
-                            if (!isMenuOpen) {
-                                closeAllDropdowns();
-                                navLinks.style.maxHeight = '0';
-                            } else {
-                                navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-                            }
-                        });
-                    }
+                    <a href="blog.html">Blog e Notícias Técnicas</a>
+                    <a href="contact.html">Localização e Representantes</a>
+                </div>
 
-                    /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
-                    dropdownLinks.forEach(link => {
-                        link.addEventListener('click', e => {
-                            // Ativa a lógica do acordeão apenas em mobile (até 991px)
-                            if (window.innerWidth <= 991) {
-                                e.preventDefault();
-                                const parent = link.parentElement;
-                                const isOpen = parent.classList.contains('open');
 
-                                // Fecha todos os outros dropdowns
-                                document.querySelectorAll('.dropdown.open').forEach(dd => {
-                                    if (dd !== parent) {
-                                        dd.classList.remove('open');
-                                        const controlledLink = dd.querySelector('.dropdown-link');
-                                        if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                                    }
-                                });
 
-                                // Abre/fecha o selecionado
-                                parent.classList.toggle('open', !isOpen);
-                                link.setAttribute('aria-expanded', !isOpen);
-                            }
-                        });
-                    });
+            </div>
 
-                    /* 3. Fechar Menu no Clique de Link Final (Mobile) */
-                    document.querySelectorAll('.nav-links a').forEach(link => {
-                        link.addEventListener('click', () => {
-                            const isDropdownLink = link.classList.contains('dropdown-link');
-                            const isMenuOpen = navLinks.classList.contains('open');
+            <div class="footer-bottom-line">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
+                        reservados.
+                    </p>
+                    <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
+                </div>
+            </div>
 
-                            if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
-                                navLinks.classList.remove('open');
-                                toggle.setAttribute('aria-expanded', 'false');
-                                navLinks.style.maxHeight = '0';
-                                closeAllDropdowns();
-                            }
-                        });
-                    });
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seletores
+            const toggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                    /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
-                    window.addEventListener('resize', () => {
-                        const navbar = document.querySelector('.navbar');
-                        const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+            // Função auxiliar para fechar todos os dropdowns abertos
+            const closeAllDropdowns = () => {
+                document.querySelectorAll('.dropdown.open').forEach(dd => {
+                    dd.classList.remove('open');
+                    const controlledLink = dd.querySelector('.dropdown-link');
+                    if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                });
+            };
 
-                        if (window.innerWidth > 991) {
-                            // Desktop: remove classes mobile
-                            navLinks.classList.remove('open');
-                            navLinks.style.maxHeight = '';
-                            toggle.setAttribute('aria-expanded', 'false');
-                            closeAllDropdowns();
-                        } else {
-                            // Mobile: garante a max-height correta se o menu estiver aberto
-                            if (navLinks.classList.contains('open')) {
-                                navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-                            } else {
-                                navLinks.style.maxHeight = '0';
-                            }
-                        }
-                    });
+            /* 1. Lógica do Menu Principal (Hamburger) */
+            if (toggle && navLinks) {
+                toggle.addEventListener('click', () => {
+                    const navbar = document.querySelector('.navbar');
+                    const headerHeight = navbar ? navbar.offsetHeight : 0;
 
-                    /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
-                    if (window.innerWidth <= 991 && navLinks) {
+                    const isMenuOpen = navLinks.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', isMenuOpen);
+
+                    if (!isMenuOpen) {
+                        closeAllDropdowns();
                         navLinks.style.maxHeight = '0';
+                    } else {
+                        navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
                     }
                 });
-            </script>
-            <!-- Footer Dimaser End -->
+            }
+
+            /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                    // Ativa a lógica do acordeão apenas em mobile (até 991px)
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        const parent = link.parentElement;
+                        const isOpen = parent.classList.contains('open');
+
+                        // Fecha todos os outros dropdowns
+                        document.querySelectorAll('.dropdown.open').forEach(dd => {
+                            if (dd !== parent) {
+                                dd.classList.remove('open');
+                                const controlledLink = dd.querySelector('.dropdown-link');
+                                if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                            }
+                        });
+
+                        // Abre/fecha o selecionado
+                        parent.classList.toggle('open', !isOpen);
+                        link.setAttribute('aria-expanded', !isOpen);
+                    }
+                });
+            });
+
+            /* 3. Fechar Menu no Clique de Link Final (Mobile) */
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const isDropdownLink = link.classList.contains('dropdown-link');
+                    const isMenuOpen = navLinks.classList.contains('open');
+
+                    if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
+                        navLinks.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        navLinks.style.maxHeight = '0';
+                        closeAllDropdowns();
+                    }
+                });
+            });
+
+            /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
+            window.addEventListener('resize', () => {
+                const navbar = document.querySelector('.navbar');
+                const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+
+                if (window.innerWidth > 991) {
+                    // Desktop: remove classes mobile
+                    navLinks.classList.remove('open');
+                    navLinks.style.maxHeight = '';
+                    toggle.setAttribute('aria-expanded', 'false');
+                    closeAllDropdowns();
+                } else {
+                    // Mobile: garante a max-height correta se o menu estiver aberto
+                    if (navLinks.classList.contains('open')) {
+                        navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    } else {
+                        navLinks.style.maxHeight = '0';
+                    }
+                }
+            });
+
+            /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
+            if (window.innerWidth <= 991 && navLinks) {
+                navLinks.style.maxHeight = '0';
+            }
+        });
+    </script>
+    <!-- Footer Dimaser End -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
@@ -1475,6 +1566,8 @@
     <script>
         (function (a, b, c, d) { try { var e = b.head || b.getElementsByTagName("head")[0]; var f = b.createElement("script"); f.setAttribute("src", c); f.setAttribute("charset", "UTF-8"); f.defer = true; a.neuroleadId = d; e.appendChild(f) } catch (g) { } })(window, document, "https://cdn.leadster.com.br/neurolead/neurolead.min.js", "5sYMQn8rTbFQ6SohHro00coEs")
     </script>
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 </body>
 
