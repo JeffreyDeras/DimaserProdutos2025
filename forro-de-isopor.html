@@ -919,355 +919,359 @@
 
     <!-- Footer Dimaser Start -->
 
-            <style>
-                .footer-dimaser {
-                    background-color: #275A53;
-                    color: #cccccc;
-                    font-family: 'Poppins', sans-serif;
-                    padding: 40px 0 20px 0;
-                    font-size: 14px;
-                    border-top: 3px solid #f9c80e;
-                }
+    <style>
+        .footer-dimaser {
+            background-color: #275A53;
+            color: #cccccc;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px 0 20px 0;
+            font-size: 14px;
+            border-top: 3px solid #f9c80e;
+        }
 
-                /* Títulos das Colunas */
-                .footer-dimaser h4 {
-                    color: #f9c80e;
-                    margin-bottom: 20px;
-                    font-weight: 800;
-                    font-size: 1.15rem;
-                    position: relative;
-                    text-transform: uppercase;
-                }
+        /* Títulos das Colunas */
+        .footer-dimaser h4 {
+            color: #f9c80e;
+            margin-bottom: 20px;
+            font-weight: 800;
+            font-size: 1.15rem;
+            position: relative;
+            text-transform: uppercase;
+        }
 
-                .footer-dimaser h4::after {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 3px;
-                    background-color: #f9c80e;
-                    position: absolute;
-                    bottom: -10px;
-                    left: 0;
-                }
+        .footer-dimaser h4::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #f9c80e;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
 
-                /* Estilo dos Links de Navegação */
-                .footer-dimaser a:not(.btn),
-                .footer-dimaser p a {
-                    color: #cccccc;
-                    text-decoration: none;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    display: block;
-                    margin-bottom: 4px;
-                    line-height: 1.6;
-                }
+        /* Estilo dos Links de Navegação */
+        .footer-dimaser a:not(.btn),
+        .footer-dimaser p a {
+            color: #cccccc;
+            text-decoration: none;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+            display: block;
+            margin-bottom: 4px;
+            line-height: 1.6;
+        }
 
-                .footer-dimaser a:hover:not(.btn),
-                .footer-dimaser p a:hover {
-                    color: #fff;
-                }
+        .footer-dimaser a:hover:not(.btn),
+        .footer-dimaser p a:hover {
+            color: #fff;
+        }
 
-                /* Ícones de contato */
-                .footer-dimaser .fa {
-                    color: #f9c80e;
-                    margin-right: 12px;
-                    width: 15px;
-                }
+        /* Ícones de contato */
+        .footer-dimaser .fa {
+            color: #f9c80e;
+            margin-right: 12px;
+            width: 15px;
+        }
 
-                /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
-                .footer-dimaser .col-lg-3 p {
-                    display: flex;
-                    align-items: flex-start;
-                }
+        /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
+        .footer-dimaser .col-lg-3 p {
+            display: flex;
+            align-items: flex-start;
+        }
 
-                .footer-dimaser .col-lg-3 p .fa {
-                    flex-shrink: 0;
-                }
+        .footer-dimaser .col-lg-3 p .fa {
+            flex-shrink: 0;
+        }
 
-                .footer-dimaser .col-lg-3 p a {
-                    display: inline;
-                    line-height: inherit;
-                    margin-bottom: 0;
-                }
+        .footer-dimaser .col-lg-3 p a {
+            display: inline;
+            line-height: inherit;
+            margin-bottom: 0;
+        }
 
-                .footer-dimaser .col-lg-3 p:not(:first-of-type) {
-                    display: block;
-                }
-
-
-                /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
-                .footer-social {
-                    display: flex;
-                    gap: 15px;
-                    margin-top: 20px;
-                }
-
-                .footer-social a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 20px;
-                    height: 20px;
-                    color: #275A53;
-                    font-size: 1.6rem;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    text-decoration: none;
-                }
-
-                .footer-social a:hover {
-                    color: #fdbe33;
-
-                }
+        .footer-dimaser .col-lg-3 p:not(:first-of-type) {
+            display: block;
+        }
 
 
-                /* Rodapé Inferior (Direitos Autorais - Baseboard) */
-                .footer-bottom-line {
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    padding-top: 15px;
-                    margin-top: 15px;
-                    font-size: 13px;
-                }
+        /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-                .footer-bottom-line p {
-                    margin-bottom: 10px;
-                }
+        .footer-social a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            color: #275A53;
+            font-size: 1.6rem;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+        }
 
-                .footer-bottom-line a {
-                    color: #f9c80e !important;
-                    display: inline;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                }
+        .footer-social a:hover {
+            color: #fdbe33;
 
-                /* Estilo da Newsletter */
-                .footer-newsletter .form-control {
-                    border-radius: 3px 0 0 3px;
-                    border: none;
-                    padding: 8px 10px;
-                    height: auto;
-                    background-color: rgba(255, 255, 255, 0.95);
-                    color: #275A53;
-                }
-
-                .footer-newsletter .btn {
-                    background: #f9c80e;
-                    color: #275A53;
-                    border-radius: 0 3px 3px 0;
-                    padding: 8px 15px;
-                    font-weight: 700;
-                    border: none;
-                    transition: background 0.3s;
-                }
-
-                .footer-newsletter .btn:hover {
-                    background: #fff;
-                    color: #f9c80e;
-                }
-
-                /* Responsividade: Centraliza o conteúdo em Mobile */
-                @media (max-width: 991px) {
-                    .footer-dimaser {
-                        padding-top: 30px;
-                    }
-
-                    .footer-dimaser h4::after {
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-
-                    .footer-dimaser .col-md-6.col-lg-3,
-                    .footer-dimaser .footer-newsletter {
-                        text-align: center;
-                        margin-bottom: 30px !important;
-                    }
-
-                    .footer-dimaser .col-lg-3 p,
-                    .footer-dimaser .col-lg-3 a {
-                        text-align: center;
-                        display: block;
-                    }
-
-                    .footer-dimaser .col-lg-3 p:first-of-type {
-                        display: block;
-                        text-align: center;
-                    }
-
-                    .footer-social {
-                        justify-content: center;
-                        margin: 15px auto 20px auto;
-                    }
-
-                    .footer-bottom-line .d-flex {
-                        flex-direction: column;
-                        text-align: center;
-                    }
-
-                    .footer-dimaser .footer-newsletter .form {
-                        max-width: 350px;
-                        margin: 15px auto 0 auto;
-                    }
-                }
-            </style>
-
-            <footer class="footer-dimaser">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Fale Conosco</h4>
-                            <p>
-                                <i class="fa fa-map-marker-alt"></i>
-                                <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
-                                    Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
-                                </a>
-                            </p>
-                            <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
-                            </p>
-                            <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
-                            </p>
-                            <p><i class="fa fa-envelope"></i> <a
-                                    href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a></p>
-
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Soluções e Sistemas</h4>
-                            <a href="divisorias.html">Divisórias Corporativas</a>
-                            <a href="drywall.html">Drywall e Estruturas</a>
-                            <a href="service.html">Instalação e Suporte Técnico</a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Institucional e Apoio</h4>
-                            <a href="about.html">Quem Somos (Sobre Nós)</a>
+        }
 
 
-                            <a href="blog.html">Blog e Notícias Técnicas</a>
-                            <a href="contact.html">Localização e Representantes</a>
-                        </div>
+        /* Rodapé Inferior (Direitos Autorais - Baseboard) */
+        .footer-bottom-line {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 13px;
+        }
 
+        .footer-bottom-line p {
+            margin-bottom: 10px;
+        }
 
+        .footer-bottom-line a {
+            color: #f9c80e !important;
+            display: inline;
+            /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+            transition: color 0.3s ease-in-out;
+        }
 
+        /* Estilo da Newsletter */
+        .footer-newsletter .form-control {
+            border-radius: 3px 0 0 3px;
+            border: none;
+            padding: 8px 10px;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #275A53;
+        }
+
+        .footer-newsletter .btn {
+            background: #f9c80e;
+            color: #275A53;
+            border-radius: 0 3px 3px 0;
+            padding: 8px 15px;
+            font-weight: 700;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .footer-newsletter .btn:hover {
+            background: #fff;
+            color: #f9c80e;
+        }
+
+        /* Responsividade: Centraliza o conteúdo em Mobile */
+        @media (max-width: 991px) {
+            .footer-dimaser {
+                padding-top: 30px;
+            }
+
+            .footer-dimaser h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-dimaser .col-md-6.col-lg-3,
+            .footer-dimaser .footer-newsletter {
+                text-align: center;
+                margin-bottom: 30px !important;
+            }
+
+            .footer-dimaser .col-lg-3 p,
+            .footer-dimaser .col-lg-3 a {
+                text-align: center;
+                display: block;
+            }
+
+            .footer-dimaser .col-lg-3 p:first-of-type {
+                display: block;
+                text-align: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+                margin: 15px auto 20px auto;
+            }
+
+            .footer-bottom-line .d-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-dimaser .footer-newsletter .form {
+                max-width: 350px;
+                margin: 15px auto 0 auto;
+            }
+        }
+    </style>
+
+    <footer class="footer-dimaser">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Fale Conosco</h4>
+                    <p>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
+                            Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
+                        </a>
+                    </p>
+
+                    <p><a href="tel:+5521982007237"><i class="fab fa-whatsapp" style="color: #f9c80e;
+                    margin-right: 12px; width: 15px;"></i> (21) 98200-7237</a>
+                    </p>
+                    <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
+                    </p>
+                    <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
+                    </p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
                     </div>
-
-                    <div class="footer-bottom-line">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
-                                reservados.
-                            </p>
-                            <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
-                        </div>
-                    </div>
-
                 </div>
-            </footer>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    // Seletores
-                    const toggle = document.getElementById('menu-toggle');
-                    const navLinks = document.getElementById('nav-links');
-                    const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                    // Função auxiliar para fechar todos os dropdowns abertos
-                    const closeAllDropdowns = () => {
-                        document.querySelectorAll('.dropdown.open').forEach(dd => {
-                            dd.classList.remove('open');
-                            const controlledLink = dd.querySelector('.dropdown-link');
-                            if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                        });
-                    };
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Soluções e Sistemas</h4>
+                    <a href="divisorias.html">Divisórias Corporativas</a>
+                    <a href="drywall.html">Drywall e Estruturas</a>
+                    <a href="service.html">Instalação e Suporte Técnico</a>
+                </div>
 
-                    /* 1. Lógica do Menu Principal (Hamburger) */
-                    if (toggle && navLinks) {
-                        toggle.addEventListener('click', () => {
-                            const navbar = document.querySelector('.navbar');
-                            const headerHeight = navbar ? navbar.offsetHeight : 0;
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Institucional e Apoio</h4>
+                    <a href="about.html">Quem Somos (Sobre Nós)</a>
 
-                            const isMenuOpen = navLinks.classList.toggle('open');
-                            toggle.setAttribute('aria-expanded', isMenuOpen);
 
-                            if (!isMenuOpen) {
-                                closeAllDropdowns();
-                                navLinks.style.maxHeight = '0';
-                            } else {
-                                navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-                            }
-                        });
-                    }
+                    <a href="blog.html">Blog e Notícias Técnicas</a>
+                    <a href="contact.html">Localização e Representantes</a>
+                </div>
 
-                    /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
-                    dropdownLinks.forEach(link => {
-                        link.addEventListener('click', e => {
-                            // Ativa a lógica do acordeão apenas em mobile (até 991px)
-                            if (window.innerWidth <= 991) {
-                                e.preventDefault();
-                                const parent = link.parentElement;
-                                const isOpen = parent.classList.contains('open');
 
-                                // Fecha todos os outros dropdowns
-                                document.querySelectorAll('.dropdown.open').forEach(dd => {
-                                    if (dd !== parent) {
-                                        dd.classList.remove('open');
-                                        const controlledLink = dd.querySelector('.dropdown-link');
-                                        if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                                    }
-                                });
 
-                                // Abre/fecha o selecionado
-                                parent.classList.toggle('open', !isOpen);
-                                link.setAttribute('aria-expanded', !isOpen);
-                            }
-                        });
-                    });
+            </div>
 
-                    /* 3. Fechar Menu no Clique de Link Final (Mobile) */
-                    document.querySelectorAll('.nav-links a').forEach(link => {
-                        link.addEventListener('click', () => {
-                            const isDropdownLink = link.classList.contains('dropdown-link');
-                            const isMenuOpen = navLinks.classList.contains('open');
+            <div class="footer-bottom-line">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
+                        reservados.
+                    </p>
+                    <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
+                </div>
+            </div>
 
-                            if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
-                                navLinks.classList.remove('open');
-                                toggle.setAttribute('aria-expanded', 'false');
-                                navLinks.style.maxHeight = '0';
-                                closeAllDropdowns();
-                            }
-                        });
-                    });
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seletores
+            const toggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                    /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
-                    window.addEventListener('resize', () => {
-                        const navbar = document.querySelector('.navbar');
-                        const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+            // Função auxiliar para fechar todos os dropdowns abertos
+            const closeAllDropdowns = () => {
+                document.querySelectorAll('.dropdown.open').forEach(dd => {
+                    dd.classList.remove('open');
+                    const controlledLink = dd.querySelector('.dropdown-link');
+                    if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                });
+            };
 
-                        if (window.innerWidth > 991) {
-                            // Desktop: remove classes mobile
-                            navLinks.classList.remove('open');
-                            navLinks.style.maxHeight = '';
-                            toggle.setAttribute('aria-expanded', 'false');
-                            closeAllDropdowns();
-                        } else {
-                            // Mobile: garante a max-height correta se o menu estiver aberto
-                            if (navLinks.classList.contains('open')) {
-                                navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-                            } else {
-                                navLinks.style.maxHeight = '0';
-                            }
-                        }
-                    });
+            /* 1. Lógica do Menu Principal (Hamburger) */
+            if (toggle && navLinks) {
+                toggle.addEventListener('click', () => {
+                    const navbar = document.querySelector('.navbar');
+                    const headerHeight = navbar ? navbar.offsetHeight : 0;
 
-                    /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
-                    if (window.innerWidth <= 991 && navLinks) {
+                    const isMenuOpen = navLinks.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', isMenuOpen);
+
+                    if (!isMenuOpen) {
+                        closeAllDropdowns();
                         navLinks.style.maxHeight = '0';
+                    } else {
+                        navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
                     }
                 });
-            </script>
-            <!-- Footer Dimaser End -->
+            }
+
+            /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                    // Ativa a lógica do acordeão apenas em mobile (até 991px)
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        const parent = link.parentElement;
+                        const isOpen = parent.classList.contains('open');
+
+                        // Fecha todos os outros dropdowns
+                        document.querySelectorAll('.dropdown.open').forEach(dd => {
+                            if (dd !== parent) {
+                                dd.classList.remove('open');
+                                const controlledLink = dd.querySelector('.dropdown-link');
+                                if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                            }
+                        });
+
+                        // Abre/fecha o selecionado
+                        parent.classList.toggle('open', !isOpen);
+                        link.setAttribute('aria-expanded', !isOpen);
+                    }
+                });
+            });
+
+            /* 3. Fechar Menu no Clique de Link Final (Mobile) */
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const isDropdownLink = link.classList.contains('dropdown-link');
+                    const isMenuOpen = navLinks.classList.contains('open');
+
+                    if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
+                        navLinks.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        navLinks.style.maxHeight = '0';
+                        closeAllDropdowns();
+                    }
+                });
+            });
+
+            /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
+            window.addEventListener('resize', () => {
+                const navbar = document.querySelector('.navbar');
+                const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+
+                if (window.innerWidth > 991) {
+                    // Desktop: remove classes mobile
+                    navLinks.classList.remove('open');
+                    navLinks.style.maxHeight = '';
+                    toggle.setAttribute('aria-expanded', 'false');
+                    closeAllDropdowns();
+                } else {
+                    // Mobile: garante a max-height correta se o menu estiver aberto
+                    if (navLinks.classList.contains('open')) {
+                        navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    } else {
+                        navLinks.style.maxHeight = '0';
+                    }
+                }
+            });
+
+            /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
+            if (window.innerWidth <= 991 && navLinks) {
+                navLinks.style.maxHeight = '0';
+            }
+        });
+    </script>
+    <!-- Footer Dimaser End -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
@@ -1396,117 +1400,116 @@
 
     <!--menu toggle-->
     <script>
-    function closeAllDropdowns() {
-        const allDropdowns = document.querySelectorAll('.dropdown-menu.show');
-        allDropdowns.forEach(dropdown => {
-            dropdown.classList.remove('show');
-            dropdown.closest('.nav-item.dropdown').querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-        });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        // 🚩 CORREÇÃO PRINCIPAL AQUI: Mudança para '.menu-toggle'
-        const toggle = document.querySelector('.menu-toggle'); 
-        
-        const navLinks = document.querySelector('.navbar-nav');
-
-        if (!toggle || !navLinks) {
-            console.error('Elementos toggle ou navLinks não encontrados no DOM.');
-            return;
+        function closeAllDropdowns() {
+            const allDropdowns = document.querySelectorAll('.dropdown-menu.show');
+            allDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('show');
+                dropdown.closest('.nav-item.dropdown').querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
         }
 
-        /* 1. Evento de Clique no Toggle */
-        toggle.addEventListener('click', function () {
-            navLinks.classList.toggle('open');
-            const isExpanded = navLinks.classList.contains('open');
+        document.addEventListener('DOMContentLoaded', () => {
+            // 🚩 CORREÇÃO PRINCIPAL AQUI: Mudança para '.menu-toggle'
+            const toggle = document.querySelector('.menu-toggle');
 
-            toggle.setAttribute('aria-expanded', isExpanded);
+            const navLinks = document.querySelector('.navbar-nav');
 
-            if (isExpanded) {
-                const navbar = document.querySelector('.navbar');
-                const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
-                // Abre o menu, ajustando a altura com base no tamanho do cabeçalho
-                navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-            } else {
-                // Fecha o menu
-                navLinks.style.maxHeight = '0';
-                closeAllDropdowns();
+            if (!toggle || !navLinks) {
+                console.error('Elementos toggle ou navLinks não encontrados no DOM.');
+                return;
             }
-        });
 
-        /* 2. Fechar menu e dropdowns ao clicar em um link (em mobile) */
-        navLinks.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 991) {
-                    navLinks.classList.remove('open');
+            /* 1. Evento de Clique no Toggle */
+            toggle.addEventListener('click', function () {
+                navLinks.classList.toggle('open');
+                const isExpanded = navLinks.classList.contains('open');
+
+                toggle.setAttribute('aria-expanded', isExpanded);
+
+                if (isExpanded) {
+                    const navbar = document.querySelector('.navbar');
+                    const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+                    // Abre o menu, ajustando a altura com base no tamanho do cabeçalho
+                    navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                } else {
+                    // Fecha o menu
                     navLinks.style.maxHeight = '0';
-                    toggle.setAttribute('aria-expanded', 'false');
                     closeAllDropdowns();
                 }
             });
-        });
 
-        /* 3. Dropdowns (Submenus) */
-        navLinks.querySelectorAll('.dropdown-toggle').forEach(dropdownToggle => {
-            dropdownToggle.addEventListener('click', function (e) {
-                e.preventDefault();
-                e.stopPropagation(); // Previne que o clique feche o menu principal
-
-                const parentItem = this.closest('.nav-item.dropdown');
-                const dropdownMenu = parentItem.querySelector('.dropdown-menu');
-
-                // Fecha outros dropdowns, mas não o menu principal
-                navLinks.querySelectorAll('.dropdown-menu.show').forEach(otherDropdown => {
-                    if (otherDropdown !== dropdownMenu) {
-                        otherDropdown.classList.remove('show');
-                        otherDropdown.closest('.nav-item.dropdown').querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+            /* 2. Fechar menu e dropdowns ao clicar em um link (em mobile) */
+            navLinks.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 991) {
+                        navLinks.classList.remove('open');
+                        navLinks.style.maxHeight = '0';
+                        toggle.setAttribute('aria-expanded', 'false');
+                        closeAllDropdowns();
                     }
                 });
+            });
 
-                // Alterna o dropdown atual
-                dropdownMenu.classList.toggle('show');
-                this.setAttribute('aria-expanded', dropdownMenu.classList.contains('show'));
+            /* 3. Dropdowns (Submenus) */
+            navLinks.querySelectorAll('.dropdown-toggle').forEach(dropdownToggle => {
+                dropdownToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Previne que o clique feche o menu principal
 
-                // Reajusta a altura máxima do menu principal
-                if (window.innerWidth <= 991 && navLinks.classList.contains('open')) {
-                    const navbar = document.querySelector('.navbar');
-                    const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
-                    navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    const parentItem = this.closest('.nav-item.dropdown');
+                    const dropdownMenu = parentItem.querySelector('.dropdown-menu');
+
+                    // Fecha outros dropdowns, mas não o menu principal
+                    navLinks.querySelectorAll('.dropdown-menu.show').forEach(otherDropdown => {
+                        if (otherDropdown !== dropdownMenu) {
+                            otherDropdown.classList.remove('show');
+                            otherDropdown.closest('.nav-item.dropdown').querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    // Alterna o dropdown atual
+                    dropdownMenu.classList.toggle('show');
+                    this.setAttribute('aria-expanded', dropdownMenu.classList.contains('show'));
+
+                    // Reajusta a altura máxima do menu principal
+                    if (window.innerWidth <= 991 && navLinks.classList.contains('open')) {
+                        const navbar = document.querySelector('.navbar');
+                        const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+                        navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    }
+                });
+            });
+
+            /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
+            window.addEventListener('resize', () => {
+                const navbar = document.querySelector('.navbar');
+                const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+
+                if (window.innerWidth > 991) {
+                    // Desktop: remove classes mobile
+                    navLinks.classList.remove('open');
+                    navLinks.style.maxHeight = ''; // Reseta para o comportamento desktop (display: flex/block)
+                    toggle.setAttribute('aria-expanded', 'false');
+                    closeAllDropdowns();
+                } else {
+                    // Mobile: garante a max-height correta se o menu estiver aberto
+                    if (navLinks.classList.contains('open')) {
+                        navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    } else {
+                        navLinks.style.maxHeight = '0'; // Garante que o menu esteja escondido
+                    }
                 }
             });
-        });
 
-        /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
-        window.addEventListener('resize', () => {
-            const navbar = document.querySelector('.navbar');
-            const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
-
-            if (window.innerWidth > 991) {
-                // Desktop: remove classes mobile
-                navLinks.classList.remove('open');
-                navLinks.style.maxHeight = ''; // Reseta para o comportamento desktop (display: flex/block)
-                toggle.setAttribute('aria-expanded', 'false');
-                closeAllDropdowns();
-            } else {
-                // Mobile: garante a max-height correta se o menu estiver aberto
-                if (navLinks.classList.contains('open')) {
-                    navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-                } else {
-                    navLinks.style.maxHeight = '0'; // Garante que o menu esteja escondido
-                }
+            /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
+            if (window.innerWidth <= 991 && navLinks) {
+                navLinks.style.maxHeight = '0';
             }
         });
-
-        /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
-        if (window.innerWidth <= 991 && navLinks) {
-            navLinks.style.maxHeight = '0';
-        }
-    });
-</script>
-
-    <script>
-        (function (a, b, c, d) { try { var e = b.head || b.getElementsByTagName("head")[0]; var f = b.createElement("script"); f.setAttribute("src", c); f.setAttribute("charset", "UTF-8"); f.defer = true; a.neuroleadId = d; e.appendChild(f) } catch (g) { } })(window, document, "https://cdn.leadster.com.br/neurolead/neurolead.min.js", "5sYMQn8rTbFQ6SohHro00coEs")
     </script>
+
+    <script>(function(a,b,c,d){try{var e=b.head||b.getElementsByTagName("head")[0];var f=b.createElement("script");f.setAttribute("src",c);f.setAttribute("charset","UTF-8");f.defer=true;a.neuroleadId=d;e.appendChild(f)}catch(g){}})(window,document,"https://cdn.leadster.com.br/neurolead/neurolead.min.js","xChB5QK14isI1oMSQ92zFiqkP")</script>
+
 
 
 

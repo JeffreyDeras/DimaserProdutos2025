@@ -614,7 +614,8 @@
             font-weight: 600;
             border-top: 1px solid #f0f0f0;
             transition: color 0.3s;
-            cursor: pointer; /* Adicionado para indicar clique */
+            cursor: pointer;
+            /* Adicionado para indicar clique */
         }
 
         .dimaser-card a.card-link:hover {
@@ -828,7 +829,7 @@
 
                 <li role="none"><a role="menuitem" href="drywall.html">Drywall</a></li>
 
-                
+
                 <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
                 <li role="none"><a role="menuitem" href="contato.html">Contato</a></li>
                 <li role="none">
@@ -1302,442 +1303,451 @@
 
         <!--CTA-->
 
-<style>
-    /* === ESTILOS PARA O CTA DE CATÁLOGO COMPLETO === */
-    .cta-full-catalog {
-        /* Usando cores da sua identidade (Azul Dimaser e destaque) */
-        background: linear-gradient(135deg, var(--color-primary-dimaser), #004488); 
-        padding: 60px 20px;
-        margin: 60px 0;
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 51, 102, 0.4);
-    }
-    
-    .cta-full-catalog h2 {
-        color: #fff;
-        font-weight: 800;
-        margin-bottom: 10px;
-        font-size: 2rem;
-    }
-    
-    .cta-full-catalog p {
-        color: #f0f0f0;
-        font-size: 1.1rem;
-        max-width: 800px;
-        margin: 0 auto 30px auto;
-    }
-    
-    .cta-icon {
-        font-size: 3rem;
-        color: var(--color-highlight-dimaser); /* Dourado */
-        margin-bottom: 20px;
-    }
-    
-    .cta-full-btn {
-        display: inline-flex;
-        align-items: center;
-        background: var(--color-highlight-dimaser);
-        color: var(--color-primary-dimaser) !important; /* Força a cor escura no botão */
-        padding: 15px 35px;
-        border-radius: 50px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: background 0.3s, transform 0.3s;
-        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-    
-    .cta-full-btn:hover {
-        background: #e6c500;
-        transform: translateY(-2px);
-        color: var(--color-text-dark) !important;
-    }
-    
-    /* Ajuste em mobile */
-    @media (max-width: 767px) {
-        .cta-full-catalog h2 {
-            font-size: 1.5rem;
-        }
-        .cta-full-btn {
-            padding: 12px 25px;
-            font-size: 0.9rem;
-        }
-    }
-</style>
+        <style>
+            /* === ESTILOS PARA O CTA DE CATÁLOGO COMPLETO === */
+            .cta-full-catalog {
+                /* Usando cores da sua identidade (Azul Dimaser e destaque) */
+                background: linear-gradient(135deg, var(--color-primary-dimaser), #004488);
+                padding: 60px 20px;
+                margin: 60px 0;
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 51, 102, 0.4);
+            }
 
-<section class="cta-full-catalog">
-    <div class="container text-center">
-        <i class="fas fa-boxes cta-icon"></i> 
-        <h2>Não encontrou o que procurava?</h2>
-        <p>Temos diversas variações de placas, perfis metálicos e acessórios que não estão listados online. Entre em contato e consulte nosso catálogo completo!</p>
-        <a href="https://wa.me/5521982007237?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20fazer%20um%20or%C3%A7amento." class="cta-full-btn">
-            FALE CONOSCO E VEJA O CATÁLOGO COMPLETO <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
-</section>
-<div class="dimaser-modal-bg" id="dimaserModalBg">
-...</div>
+            .cta-full-catalog h2 {
+                color: #fff;
+                font-weight: 800;
+                margin-bottom: 10px;
+                font-size: 2rem;
+            }
+
+            .cta-full-catalog p {
+                color: #f0f0f0;
+                font-size: 1.1rem;
+                max-width: 800px;
+                margin: 0 auto 30px auto;
+            }
+
+            .cta-icon {
+                font-size: 3rem;
+                color: var(--color-highlight-dimaser);
+                /* Dourado */
+                margin-bottom: 20px;
+            }
+
+            .cta-full-btn {
+                display: inline-flex;
+                align-items: center;
+                background: var(--color-highlight-dimaser);
+                color: var(--color-primary-dimaser) !important;
+                /* Força a cor escura no botão */
+                padding: 15px 35px;
+                border-radius: 50px;
+                font-weight: 700;
+                text-decoration: none;
+                transition: background 0.3s, transform 0.3s;
+                box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .cta-full-btn:hover {
+                background: #e6c500;
+                transform: translateY(-2px);
+                color: var(--color-text-dark) !important;
+            }
+
+            /* Ajuste em mobile */
+            @media (max-width: 767px) {
+                .cta-full-catalog h2 {
+                    font-size: 1.5rem;
+                }
+
+                .cta-full-btn {
+                    padding: 12px 25px;
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
+
+        <section class="cta-full-catalog">
+            <div class="container text-center">
+                <i class="fas fa-boxes cta-icon"></i>
+                <h2>Não encontrou o que procurava?</h2>
+                <p>Temos diversas variações de placas, perfis metálicos e acessórios que não estão listados online.
+                    Entre em contato e consulte nosso catálogo completo!</p>
+                <a href="https://wa.me/5521982007237?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20fazer%20um%20or%C3%A7amento."
+                    class="cta-full-btn">
+                    FALE CONOSCO E VEJA O CATÁLOGO COMPLETO <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+        <div class="dimaser-modal-bg" id="dimaserModalBg">
+            ...</div>
 
 
-<!---end CTA-->
+        <!---end CTA-->
 
 
         <!-- ========================= FOOTER DIMASER REVISADO E OTIMIZADO ========================= -->
-       <!-- Footer Dimaser Start -->
+        <!-- Footer Dimaser Start -->
 
-            <style>
+        <style>
+            .footer-dimaser {
+                background-color: #275A53;
+                color: #cccccc;
+                font-family: 'Poppins', sans-serif;
+                padding: 40px 0 20px 0;
+                font-size: 14px;
+                border-top: 3px solid #f9c80e;
+            }
+
+            /* Títulos das Colunas */
+            .footer-dimaser h4 {
+                color: #f9c80e;
+                margin-bottom: 20px;
+                font-weight: 800;
+                font-size: 1.15rem;
+                position: relative;
+                text-transform: uppercase;
+            }
+
+            .footer-dimaser h4::after {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 3px;
+                background-color: #f9c80e;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+            }
+
+            /* Estilo dos Links de Navegação */
+            .footer-dimaser a:not(.btn),
+            .footer-dimaser p a {
+                color: #cccccc;
+                text-decoration: none;
+                /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+                transition: color 0.3s ease-in-out;
+                display: block;
+                margin-bottom: 4px;
+                line-height: 1.6;
+            }
+
+            .footer-dimaser a:hover:not(.btn),
+            .footer-dimaser p a:hover {
+                color: #fff;
+            }
+
+            /* Ícones de contato */
+            .footer-dimaser .fa {
+                color: #f9c80e;
+                margin-right: 12px;
+                width: 15px;
+            }
+
+            /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
+            .footer-dimaser .col-lg-3 p {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .footer-dimaser .col-lg-3 p .fa {
+                flex-shrink: 0;
+            }
+
+            .footer-dimaser .col-lg-3 p a {
+                display: inline;
+                line-height: inherit;
+                margin-bottom: 0;
+            }
+
+            .footer-dimaser .col-lg-3 p:not(:first-of-type) {
+                display: block;
+            }
+
+
+            /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
+            .footer-social {
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .footer-social a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                color: #275A53;
+                font-size: 1.6rem;
+                /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+                transition: color 0.3s ease-in-out;
+                text-decoration: none;
+            }
+
+            .footer-social a:hover {
+                color: #fdbe33;
+
+            }
+
+
+            /* Rodapé Inferior (Direitos Autorais - Baseboard) */
+            .footer-bottom-line {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 15px;
+                margin-top: 15px;
+                font-size: 13px;
+            }
+
+            .footer-bottom-line p {
+                margin-bottom: 10px;
+            }
+
+            .footer-bottom-line a {
+                color: #f9c80e !important;
+                display: inline;
+                /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
+                transition: color 0.3s ease-in-out;
+            }
+
+            /* Estilo da Newsletter */
+            .footer-newsletter .form-control {
+                border-radius: 3px 0 0 3px;
+                border: none;
+                padding: 8px 10px;
+                height: auto;
+                background-color: rgba(255, 255, 255, 0.95);
+                color: #275A53;
+            }
+
+            .footer-newsletter .btn {
+                background: #f9c80e;
+                color: #275A53;
+                border-radius: 0 3px 3px 0;
+                padding: 8px 15px;
+                font-weight: 700;
+                border: none;
+                transition: background 0.3s;
+            }
+
+            .footer-newsletter .btn:hover {
+                background: #fff;
+                color: #f9c80e;
+            }
+
+            /* Responsividade: Centraliza o conteúdo em Mobile */
+            @media (max-width: 991px) {
                 .footer-dimaser {
-                    background-color: #275A53;
-                    color: #cccccc;
-                    font-family: 'Poppins', sans-serif;
-                    padding: 40px 0 20px 0;
-                    font-size: 14px;
-                    border-top: 3px solid #f9c80e;
-                }
-
-                /* Títulos das Colunas */
-                .footer-dimaser h4 {
-                    color: #f9c80e;
-                    margin-bottom: 20px;
-                    font-weight: 800;
-                    font-size: 1.15rem;
-                    position: relative;
-                    text-transform: uppercase;
+                    padding-top: 30px;
                 }
 
                 .footer-dimaser h4::after {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 3px;
-                    background-color: #f9c80e;
-                    position: absolute;
-                    bottom: -10px;
-                    left: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
 
-                /* Estilo dos Links de Navegação */
-                .footer-dimaser a:not(.btn),
-                .footer-dimaser p a {
-                    color: #cccccc;
-                    text-decoration: none;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    display: block;
-                    margin-bottom: 4px;
-                    line-height: 1.6;
+                .footer-dimaser .col-md-6.col-lg-3,
+                .footer-dimaser .footer-newsletter {
+                    text-align: center;
+                    margin-bottom: 30px !important;
                 }
 
-                .footer-dimaser a:hover:not(.btn),
-                .footer-dimaser p a:hover {
-                    color: #fff;
-                }
-
-                /* Ícones de contato */
-                .footer-dimaser .fa {
-                    color: #f9c80e;
-                    margin-right: 12px;
-                    width: 15px;
-                }
-
-                /* CORREÇÃO DO ALINHAMENTO DA COLUNA "FALE CONOSCO" */
-                .footer-dimaser .col-lg-3 p {
-                    display: flex;
-                    align-items: flex-start;
-                }
-
-                .footer-dimaser .col-lg-3 p .fa {
-                    flex-shrink: 0;
-                }
-
-                .footer-dimaser .col-lg-3 p a {
-                    display: inline;
-                    line-height: inherit;
-                    margin-bottom: 0;
-                }
-
-                .footer-dimaser .col-lg-3 p:not(:first-of-type) {
+                .footer-dimaser .col-lg-3 p,
+                .footer-dimaser .col-lg-3 a {
+                    text-align: center;
                     display: block;
                 }
 
+                .footer-dimaser .col-lg-3 p:first-of-type {
+                    display: block;
+                    text-align: center;
+                }
 
-                /* Estilo para Redes Sociais (HORIZONTAL OBRIGATÓRIO) */
                 .footer-social {
-                    display: flex;
-                    gap: 15px;
-                    margin-top: 20px;
-                }
-
-                .footer-social a {
-                    display: flex;
                     justify-content: center;
-                    align-items: center;
-                    width: 20px;
-                    height: 20px;
-                    color: #275A53;
-                    font-size: 1.6rem;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                    text-decoration: none;
+                    margin: 15px auto 20px auto;
                 }
 
-                .footer-social a:hover {
-                    color: #fdbe33;
-
+                .footer-bottom-line .d-flex {
+                    flex-direction: column;
+                    text-align: center;
                 }
 
-
-                /* Rodapé Inferior (Direitos Autorais - Baseboard) */
-                .footer-bottom-line {
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    padding-top: 15px;
-                    margin-top: 15px;
-                    font-size: 13px;
+                .footer-dimaser .footer-newsletter .form {
+                    max-width: 350px;
+                    margin: 15px auto 0 auto;
                 }
+            }
+        </style>
 
-                .footer-bottom-line p {
-                    margin-bottom: 10px;
-                }
+        <footer class="footer-dimaser">
+            <div class="container">
+                <div class="row">
 
-                .footer-bottom-line a {
-                    color: #f9c80e !important;
-                    display: inline;
-                    /* PROPRIEDADE DE SUAVIZAÇÃO ADICIONADA */
-                    transition: color 0.3s ease-in-out;
-                }
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <h4>Fale Conosco</h4>
+                        <p>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
+                                Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
+                            </a>
+                        </p>
+                        <p><a href="tel:+5521982007237"><i class="fab fa-whatsapp" style="color: #f9c80e;
+                    margin-right: 12px; width: 15px;"></i> (21) 98200-7237</a>
+                        </p>
 
-                /* Estilo da Newsletter */
-                .footer-newsletter .form-control {
-                    border-radius: 3px 0 0 3px;
-                    border: none;
-                    padding: 8px 10px;
-                    height: auto;
-                    background-color: rgba(255, 255, 255, 0.95);
-                    color: #275A53;
-                }
+                        <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
+                        </p>
+                        <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
+                        </p>
+                        <p><i class="fa fa-envelope"></i> <a
+                                href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a></p>
 
-                .footer-newsletter .btn {
-                    background: #f9c80e;
-                    color: #275A53;
-                    border-radius: 0 3px 3px 0;
-                    padding: 8px 15px;
-                    font-weight: 700;
-                    border: none;
-                    transition: background 0.3s;
-                }
-
-                .footer-newsletter .btn:hover {
-                    background: #fff;
-                    color: #f9c80e;
-                }
-
-                /* Responsividade: Centraliza o conteúdo em Mobile */
-                @media (max-width: 991px) {
-                    .footer-dimaser {
-                        padding-top: 30px;
-                    }
-
-                    .footer-dimaser h4::after {
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-
-                    .footer-dimaser .col-md-6.col-lg-3,
-                    .footer-dimaser .footer-newsletter {
-                        text-align: center;
-                        margin-bottom: 30px !important;
-                    }
-
-                    .footer-dimaser .col-lg-3 p,
-                    .footer-dimaser .col-lg-3 a {
-                        text-align: center;
-                        display: block;
-                    }
-
-                    .footer-dimaser .col-lg-3 p:first-of-type {
-                        display: block;
-                        text-align: center;
-                    }
-
-                    .footer-social {
-                        justify-content: center;
-                        margin: 15px auto 20px auto;
-                    }
-
-                    .footer-bottom-line .d-flex {
-                        flex-direction: column;
-                        text-align: center;
-                    }
-
-                    .footer-dimaser .footer-newsletter .form {
-                        max-width: 350px;
-                        margin: 15px auto 0 auto;
-                    }
-                }
-            </style>
-
-            <footer class="footer-dimaser">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Fale Conosco</h4>
-                            <p>
-                                <i class="fa fa-map-marker-alt"></i>
-                                <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank">
-                                    Rua Porena, 191 - Ramos, <br> Rio de Janeiro - RJ - Brasil
-                                </a>
-                            </p>
-                            <p><a href="tel:+552122606846"><i class="fa fa-phone"></i> (21) 2260-6846</a>
-                            </p>
-                            <p><a href="tel:+552122704486"><i class="fa fa-phone"></i> (21) 2270-4486</a>
-                            </p>
-                            <p><i class="fa fa-envelope"></i> <a
-                                    href="mailto:rafael@disoter.com.br">rafael@disoter.com.br</a></p>
-
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Soluções e Sistemas</h4>
-                            <a href="divisorias.html">Divisórias Corporativas</a>
-                            <a href="drywall.html">Drywall e Estruturas</a>
-                            <a href="service.html">Instalação e Suporte Técnico</a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 mb-4">
-                            <h4>Institucional e Apoio</h4>
-                            <a href="about.html">Quem Somos (Sobre Nós)</a>
-
-
-                            <a href="blog.html">Blog e Notícias Técnicas</a>
-                            <a href="contact.html">Localização e Representantes</a>
-                        </div>
-
-
-
-                    </div>
-
-                    <div class="footer-bottom-line">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
-                                reservados.
-                            </p>
-                            <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/dimaserprodutos"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/dimaserconstru"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <h4>Soluções e Sistemas</h4>
+                        <a href="divisorias.html">Divisórias Corporativas</a>
+                        <a href="drywall.html">Drywall e Estruturas</a>
+                        <a href="service.html">Instalação e Suporte Técnico</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <h4>Institucional e Apoio</h4>
+                        <a href="about.html">Quem Somos (Sobre Nós)</a>
+
+
+                        <a href="blog.html">Blog e Notícias Técnicas</a>
+                        <a href="contact.html">Localização e Representantes</a>
+                    </div>
+
+
 
                 </div>
-            </footer>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    // Seletores
-                    const toggle = document.getElementById('menu-toggle');
-                    const navLinks = document.getElementById('nav-links');
-                    const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                    // Função auxiliar para fechar todos os dropdowns abertos
-                    const closeAllDropdowns = () => {
-                        document.querySelectorAll('.dropdown.open').forEach(dd => {
-                            dd.classList.remove('open');
-                            const controlledLink = dd.querySelector('.dropdown-link');
-                            if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                        });
-                    };
+                <div class="footer-bottom-line">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p>© 2025 <strong>Dimaser Produtos da Construção Civil</strong>. Todos os direitos
+                            reservados.
+                        </p>
+                        <p>Desenvolvido por <a href="https://jbdesignstudiosv.com">JB Design Studio</a></p>
+                    </div>
+                </div>
 
-                    /* 1. Lógica do Menu Principal (Hamburger) */
-                    if (toggle && navLinks) {
-                        toggle.addEventListener('click', () => {
-                            const navbar = document.querySelector('.navbar');
-                            const headerHeight = navbar ? navbar.offsetHeight : 0;
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Seletores
+                const toggle = document.getElementById('menu-toggle');
+                const navLinks = document.getElementById('nav-links');
+                const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                            const isMenuOpen = navLinks.classList.toggle('open');
-                            toggle.setAttribute('aria-expanded', isMenuOpen);
-
-                            if (!isMenuOpen) {
-                                closeAllDropdowns();
-                                navLinks.style.maxHeight = '0';
-                            } else {
-                                navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-                            }
-                        });
-                    }
-
-                    /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
-                    dropdownLinks.forEach(link => {
-                        link.addEventListener('click', e => {
-                            // Ativa a lógica do acordeão apenas em mobile (até 991px)
-                            if (window.innerWidth <= 991) {
-                                e.preventDefault();
-                                const parent = link.parentElement;
-                                const isOpen = parent.classList.contains('open');
-
-                                // Fecha todos os outros dropdowns
-                                document.querySelectorAll('.dropdown.open').forEach(dd => {
-                                    if (dd !== parent) {
-                                        dd.classList.remove('open');
-                                        const controlledLink = dd.querySelector('.dropdown-link');
-                                        if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                                    }
-                                });
-
-                                // Abre/fecha o selecionado
-                                parent.classList.toggle('open', !isOpen);
-                                link.setAttribute('aria-expanded', !isOpen);
-                            }
-                        });
+                // Função auxiliar para fechar todos os dropdowns abertos
+                const closeAllDropdowns = () => {
+                    document.querySelectorAll('.dropdown.open').forEach(dd => {
+                        dd.classList.remove('open');
+                        const controlledLink = dd.querySelector('.dropdown-link');
+                        if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
                     });
+                };
 
-                    /* 3. Fechar Menu no Clique de Link Final (Mobile) */
-                    document.querySelectorAll('.nav-links a').forEach(link => {
-                        link.addEventListener('click', () => {
-                            const isDropdownLink = link.classList.contains('dropdown-link');
-                            const isMenuOpen = navLinks.classList.contains('open');
-
-                            if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
-                                navLinks.classList.remove('open');
-                                toggle.setAttribute('aria-expanded', 'false');
-                                navLinks.style.maxHeight = '0';
-                                closeAllDropdowns();
-                            }
-                        });
-                    });
-
-                    /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
-                    window.addEventListener('resize', () => {
+                /* 1. Lógica do Menu Principal (Hamburger) */
+                if (toggle && navLinks) {
+                    toggle.addEventListener('click', () => {
                         const navbar = document.querySelector('.navbar');
-                        const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+                        const headerHeight = navbar ? navbar.offsetHeight : 0;
 
-                        if (window.innerWidth > 991) {
-                            // Desktop: remove classes mobile
-                            navLinks.classList.remove('open');
-                            navLinks.style.maxHeight = '';
-                            toggle.setAttribute('aria-expanded', 'false');
+                        const isMenuOpen = navLinks.classList.toggle('open');
+                        toggle.setAttribute('aria-expanded', isMenuOpen);
+
+                        if (!isMenuOpen) {
                             closeAllDropdowns();
+                            navLinks.style.maxHeight = '0';
                         } else {
-                            // Mobile: garante a max-height correta se o menu estiver aberto
-                            if (navLinks.classList.contains('open')) {
-                                navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-                            } else {
-                                navLinks.style.maxHeight = '0';
-                            }
+                            navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
                         }
                     });
+                }
 
-                    /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
-                    if (window.innerWidth <= 991 && navLinks) {
-                        navLinks.style.maxHeight = '0';
+                /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', e => {
+                        // Ativa a lógica do acordeão apenas em mobile (até 991px)
+                        if (window.innerWidth <= 991) {
+                            e.preventDefault();
+                            const parent = link.parentElement;
+                            const isOpen = parent.classList.contains('open');
+
+                            // Fecha todos os outros dropdowns
+                            document.querySelectorAll('.dropdown.open').forEach(dd => {
+                                if (dd !== parent) {
+                                    dd.classList.remove('open');
+                                    const controlledLink = dd.querySelector('.dropdown-link');
+                                    if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                                }
+                            });
+
+                            // Abre/fecha o selecionado
+                            parent.classList.toggle('open', !isOpen);
+                            link.setAttribute('aria-expanded', !isOpen);
+                        }
+                    });
+                });
+
+                /* 3. Fechar Menu no Clique de Link Final (Mobile) */
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        const isDropdownLink = link.classList.contains('dropdown-link');
+                        const isMenuOpen = navLinks.classList.contains('open');
+
+                        if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
+                            navLinks.classList.remove('open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                            navLinks.style.maxHeight = '0';
+                            closeAllDropdowns();
+                        }
+                    });
+                });
+
+                /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
+                window.addEventListener('resize', () => {
+                    const navbar = document.querySelector('.navbar');
+                    const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+
+                    if (window.innerWidth > 991) {
+                        // Desktop: remove classes mobile
+                        navLinks.classList.remove('open');
+                        navLinks.style.maxHeight = '';
+                        toggle.setAttribute('aria-expanded', 'false');
+                        closeAllDropdowns();
+                    } else {
+                        // Mobile: garante a max-height correta se o menu estiver aberto
+                        if (navLinks.classList.contains('open')) {
+                            navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                        } else {
+                            navLinks.style.maxHeight = '0';
+                        }
                     }
                 });
-            </script>
-            <!-- Footer Dimaser End -->
-     <!-- ========================= END- FOOTER DIMASER REVISADO E OTIMIZADO ========================= -->
+
+                /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
+                if (window.innerWidth <= 991 && navLinks) {
+                    navLinks.style.maxHeight = '0';
+                }
+            });
+        </script>
+        <!-- Footer Dimaser End -->
+        <!-- ========================= END- FOOTER DIMASER REVISADO E OTIMIZADO ========================= -->
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -1776,7 +1786,7 @@
                     aplicacao: "Indicada para ambientes internos sujeitos à umidade ocasional, como banheiros (fora da área de box), cozinhas e áreas de serviço",
                     vantagens: ["Melhor acústica", "Maior resistência à umidade"]
                 },
-                
+
                 /* PERFIS E ESTRUTURA METÁLICA */
                 {
                     id: "perfil_montante_parede",
@@ -2126,115 +2136,114 @@
     <script src="lib/counterup/counterup.min.js"></script>
 
     <!--menu toggle-->
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // Seletores
-                const toggle = document.getElementById('menu-toggle');
-                const navLinks = document.getElementById('nav-links');
-                const dropdownLinks = document.querySelectorAll('.dropdown-link');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seletores
+            const toggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-                // Função auxiliar para fechar todos os dropdowns abertos (Mobile/Desktop)
-                const closeAllDropdowns = () => {
-                    document.querySelectorAll('.dropdown.open').forEach(dd => {
-                        dd.classList.remove('open');
-                        const controlledLink = dd.querySelector('.dropdown-link');
-                        if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                    });
-                };
-
-                /* 1. Lógica do Menu Principal (Hamburger) */
-                if (toggle && navLinks) {
-                    toggle.addEventListener('click', () => {
-                        // A altura é capturada dinamicamente, garantindo compatibilidade com cabeçalhos fixos
-                        const navbar = document.querySelector('.navbar');
-                        const headerHeight = navbar ? navbar.offsetHeight : 0;
-
-                        const isMenuOpen = navLinks.classList.toggle('open');
-                        toggle.setAttribute('aria-expanded', isMenuOpen);
-
-                        if (!isMenuOpen) {
-                            closeAllDropdowns();
-                            // Fecha suavemente
-                            navLinks.style.maxHeight = '0';
-                        } else {
-                            // Abre, ocupando o restante da tela
-                            navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-                        }
-                    });
-                }
-
-                /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
-                dropdownLinks.forEach(link => {
-                    link.addEventListener('click', e => {
-                        // Lógica do acordeão apenas em mobile (tela menor ou igual a 991px)
-                        if (window.innerWidth <= 991) {
-                            e.preventDefault();
-                            const parent = link.parentElement;
-                            const isOpen = parent.classList.contains('open');
-
-                            // Fecha todos os outros dropdowns
-                            document.querySelectorAll('.dropdown.open').forEach(dd => {
-                                if (dd !== parent) {
-                                    dd.classList.remove('open');
-                                    const controlledLink = dd.querySelector('.dropdown-link');
-                                    if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
-                                }
-                            });
-
-                            // Abre/fecha o selecionado
-                            parent.classList.toggle('open', !isOpen);
-                            link.setAttribute('aria-expanded', !isOpen);
-                        }
-                    });
+            // Função auxiliar para fechar todos os dropdowns abertos (Mobile/Desktop)
+            const closeAllDropdowns = () => {
+                document.querySelectorAll('.dropdown.open').forEach(dd => {
+                    dd.classList.remove('open');
+                    const controlledLink = dd.querySelector('.dropdown-link');
+                    if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
                 });
+            };
 
-                /* 3. Fechar Menu no Clique de Link Final (Mobile) */
-                document.querySelectorAll('.nav-links a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        const isDropdownLink = link.classList.contains('dropdown-link');
-                        const isMenuOpen = navLinks.classList.contains('open');
-
-                        // Fecha se for um link de destino final (não um dropdown, não um link #) e estiver em mobile
-                        if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
-                            navLinks.classList.remove('open');
-                            toggle.setAttribute('aria-expanded', 'false');
-                            navLinks.style.maxHeight = '0';
-                            closeAllDropdowns();
-                        }
-                    });
-                });
-
-                /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
-                window.addEventListener('resize', () => {
+            /* 1. Lógica do Menu Principal (Hamburger) */
+            if (toggle && navLinks) {
+                toggle.addEventListener('click', () => {
+                    // A altura é capturada dinamicamente, garantindo compatibilidade com cabeçalhos fixos
                     const navbar = document.querySelector('.navbar');
-                    const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+                    const headerHeight = navbar ? navbar.offsetHeight : 0;
 
-                    if (window.innerWidth > 991) {
-                        // Desktop: remove classes mobile
-                        navLinks.classList.remove('open');
-                        navLinks.style.maxHeight = ''; // Reseta para o comportamento desktop (display: flex/block)
-                        toggle.setAttribute('aria-expanded', 'false');
+                    const isMenuOpen = navLinks.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', isMenuOpen);
+
+                    if (!isMenuOpen) {
                         closeAllDropdowns();
+                        // Fecha suavemente
+                        navLinks.style.maxHeight = '0';
                     } else {
-                        // Mobile: garante a max-height correta se o menu estiver aberto
-                        if (navLinks.classList.contains('open')) {
-                            navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
-                        } else {
-                            navLinks.style.maxHeight = '0'; // Garante que o menu esteja escondido
-                        }
+                        // Abre, ocupando o restante da tela
+                        navLinks.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
                     }
                 });
+            }
 
-                /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
-                if (window.innerWidth <= 991 && navLinks) {
-                    navLinks.style.maxHeight = '0';
+            /* 2. Lógica dos Dropdowns (Acordeão Mobile) */
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                    // Lógica do acordeão apenas em mobile (tela menor ou igual a 991px)
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        const parent = link.parentElement;
+                        const isOpen = parent.classList.contains('open');
+
+                        // Fecha todos os outros dropdowns
+                        document.querySelectorAll('.dropdown.open').forEach(dd => {
+                            if (dd !== parent) {
+                                dd.classList.remove('open');
+                                const controlledLink = dd.querySelector('.dropdown-link');
+                                if (controlledLink) controlledLink.setAttribute('aria-expanded', 'false');
+                            }
+                        });
+
+                        // Abre/fecha o selecionado
+                        parent.classList.toggle('open', !isOpen);
+                        link.setAttribute('aria-expanded', !isOpen);
+                    }
+                });
+            });
+
+            /* 3. Fechar Menu no Clique de Link Final (Mobile) */
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const isDropdownLink = link.classList.contains('dropdown-link');
+                    const isMenuOpen = navLinks.classList.contains('open');
+
+                    // Fecha se for um link de destino final (não um dropdown, não um link #) e estiver em mobile
+                    if (window.innerWidth <= 991 && !isDropdownLink && link.getAttribute('href') !== '#' && isMenuOpen) {
+                        navLinks.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        navLinks.style.maxHeight = '0';
+                        closeAllDropdowns();
+                    }
+                });
+            });
+
+            /* 4. Ajustar classes ao redimensionar (transição Mobile <-> Desktop) */
+            window.addEventListener('resize', () => {
+                const navbar = document.querySelector('.navbar');
+                const currentHeaderHeight = navbar ? navbar.offsetHeight : 0;
+
+                if (window.innerWidth > 991) {
+                    // Desktop: remove classes mobile
+                    navLinks.classList.remove('open');
+                    navLinks.style.maxHeight = ''; // Reseta para o comportamento desktop (display: flex/block)
+                    toggle.setAttribute('aria-expanded', 'false');
+                    closeAllDropdowns();
+                } else {
+                    // Mobile: garante a max-height correta se o menu estiver aberto
+                    if (navLinks.classList.contains('open')) {
+                        navLinks.style.maxHeight = `calc(100vh - ${currentHeaderHeight}px)`;
+                    } else {
+                        navLinks.style.maxHeight = '0'; // Garante que o menu esteja escondido
+                    }
                 }
             });
-        </script>
 
-        <script>
-            (function (a, b, c, d) { try { var e = b.head || b.getElementsByTagName("head")[0]; var f = b.createElement("script"); f.setAttribute("src", c); f.setAttribute("charset", "UTF-8"); f.defer = true; a.neuroleadId = d; e.appendChild(f) } catch (g) { } })(window, document, "https://cdn.leadster.com.br/neurolead/neurolead.min.js", "5sYMQn8rTbFQ6SohHro00coEs")
-        </script>
+            /* 5. Inicialização: Garante que o menu esteja "fechado" no carregamento em mobile */
+            if (window.innerWidth <= 991 && navLinks) {
+                navLinks.style.maxHeight = '0';
+            }
+        });
+    </script>
+
+   <script>(function(a,b,c,d){try{var e=b.head||b.getElementsByTagName("head")[0];var f=b.createElement("script");f.setAttribute("src",c);f.setAttribute("charset","UTF-8");f.defer=true;a.neuroleadId=d;e.appendChild(f)}catch(g){}})(window,document,"https://cdn.leadster.com.br/neurolead/neurolead.min.js","xChB5QK14isI1oMSQ92zFiqkP")</script>
+
 
 
 </body>
